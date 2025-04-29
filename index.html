@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>How AI Works: A Workshop for Instructors</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h2>How AI Works</h2>
+        <p>A Workshop for Instructors</p>
+        <p><small>Your Name – Date</small></p>
+      </section>
+
+      <section>
+        <h2>Workshop Goals</h2>
+        <ul>
+          <li>Demystify AI with intuitive explanations</li>
+          <li>Explore key concepts: prediction, training, inference</li>
+          <li>Show how models generate text and images</li>
+          <li>Inspire teaching applications</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Modern AI = Prediction Machine</h2>
+        <p>Not smart. Just really good at guessing:</p>
+        <ul>
+          <li>What shape is this image?</li>
+          <li>What word comes next?</li>
+          <li>What image matches this caption?</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Demo 1: Shape Recognition</h2>
+        <ul>
+          <li>Audience helps label: circle, triangle, square, star</li>
+          <li>Model learns to predict from patterns</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Key Concepts</h2>
+        <ul>
+          <li>Input = image prompt (fixed size)</li>
+          <li>Output = probabilities over 4 classes</li>
+          <li>Training vs Inference</li>
+          <li>Model is fixed after training</li>
+          <li>Not a database — a mathematical formula</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Demo 2: LLM Token Prediction</h2>
+        <ul>
+          <li>Input = sentence prompt</li>
+          <li>Output = probability distribution</li>
+          <li>Autoregressive: Output becomes new input</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>LLM Nuances</h2>
+        <ul>
+          <li>Token = subword (not always a full word)</li>
+          <li>Randomness settings: temperature, top-k, top-p</li>
+          <li>Hidden templates + role definitions</li>
+          <li>200B+ parameters</li>
+          <li>Emergent behaviors</li>
+          <li>Takeaway: Don’t blindly trust outputs</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Demo 3: Simple Image Generation</h2>
+        <ul>
+          <li>Reverse the classifier</li>
+          <li>Generate images the model classifies confidently</li>
+          <li>Generation is guided by prediction</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Demo 4: Image Generation at Scale</h2>
+        <ul>
+          <li>Stable Diffusion or Flux Model</li>
+          <li>Trained on text + image pairs</li>
+          <li>Every image is unique</li>
+          <li>14B parameters, needs 56GB VRAM</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Wrap-up: Key Takeaways</h2>
+        <ul>
+          <li>AI = pattern recognizer</li>
+          <li>Training = learn patterns</li>
+          <li>Inference = apply them</li>
+          <li>Prompting = guide the pattern generation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Using AI in Teaching</h2>
+        <ul>
+          <li>Prompt-based feedback (OpenAI Playground)</li>
+          <li>Lesson planning aid</li>
+          <li>Language, visuals, and coding support</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Cautions & Opportunities</h2>
+        <ul>
+          <li>AI helps, but doesn’t replace expertise</li>
+          <li>Outputs are not always reliable</li>
+          <li>Your knowledge improves your prompting</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Resources & Reflection</h2>
+        <ul>
+          <li>Link to AI study guide</li>
+          <li>Tools and examples to try</li>
+          <li>Discussion: How might you use AI in your teaching?</li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+</html>
